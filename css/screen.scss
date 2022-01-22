@@ -1,0 +1,109 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik:wght@500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+$color-lightgrey: #f8f9fc;
+$color-white: #fff;
+$color-pink: #ee8296;
+$color-darkpink: #d47385;
+$color-darkblue: #28354b;
+$color-grey: #909090;
+
+$font-standard: "Nunito Sans", sans-serif;
+$font-title: "Rubik", sans-serif;
+
+$fontsize-text: 1rem;
+$fontsize-title: 1.4rem;
+$fontsize-subtitle: 1.25rem;
+$fontsize-small: 0.75rem;
+$fontsize-arrow: 1.4rem;
+$fontsize-icon: 2rem;
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+// h1{
+//     font-size: $fontsize-title;
+//     font-family: $font-title;
+
+// }
+// h2{
+//     font-size: $fontsize-subtitle;
+//     font-family: $font-title;
+// }
+
+// h3{
+
+// }
+
+// p{
+//     font-size: $fontsize-text;
+//     font-family: $font-title;
+// }
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+.c-nieuwsbrief {
+  background-image: url(../images/nieuwsbriefimg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem 0;
+  margin-bottom: 2rem;
+  &__button {
+    width: 100%;
+  }
+  &__container {
+    padding: 0;
+  }
+}
+
+.c-map {
+  width: 100%;
+  height: 25rem;
+}
+
+.c-info {
+  align-items: center;
+  margin-bottom: 1rem;
+  &__info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__tekst {
+    margin-left: 1rem;
+  }
+}
+
+/*---------------------------------------/*
+ # BOOTSTRAP
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/

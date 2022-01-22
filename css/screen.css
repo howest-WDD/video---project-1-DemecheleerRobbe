@@ -1,0 +1,72 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik:wght@500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+.c-nieuwsbrief {
+  background-image: url(../images/nieuwsbriefimg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem 0;
+  margin-bottom: 2rem;
+}
+
+.c-nieuwsbrief__button {
+  width: 100%;
+}
+
+.c-nieuwsbrief__container {
+  padding: 0;
+}
+
+.c-map {
+  width: 100%;
+  height: 25rem;
+}
+
+.c-info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.c-info__info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c-info__tekst {
+  margin-left: 1rem;
+}
+
+/*---------------------------------------/*
+ # BOOTSTRAP
+/*---------------------------------------*/
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
