@@ -1,7 +1,6 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik:wght@500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
 /*---------------------------------------/*
  # GENERIC
@@ -11,28 +10,88 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "proxima-nova", sans-serif;
 }
 
 nav {
   background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 10;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ce001b !important;
+  background-color: #f8f9fc !important;
+  border: none !important;
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f8f9fc;
 }
 
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
+h1 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "proxima-nova", sans-serif;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+.c-carousel {
+  margin-top: -90px;
+}
+
+.c-kwaliteit {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.c-over-ons {
+  background-color: #f8f9fc;
+  margin-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .c-nieuwsbrief {
   background-image: url(../images/nieuwsbriefimg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10rem 0 10rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .c-nieuwsbrief__button {
@@ -41,6 +100,31 @@ nav {
 
 .c-nieuwsbrief__container {
   padding: 0;
+}
+
+.c-nieuwsbrief__titel {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.c-nieuwsbrief__button {
+  margin-top: 1rem;
+  background-color: #ce001b;
+  border: none;
+}
+
+.c-nieuwsbrief__button:hover {
+  background-color: #a80016;
+}
+
+.c-nieuwsbrief__button:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: #a80016 !important;
+}
+
+.c-vind-ons-hier {
+  margin-bottom: 4rem;
 }
 
 .c-map {
@@ -62,6 +146,75 @@ nav {
 
 .c-info__tekst {
   margin-left: 1rem;
+}
+
+.c-info__effect {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.c-info__effect:hover {
+  color: #ce001b;
+}
+
+.c-waarom-keurslager {
+  background-color: #f8f9fc;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.c-keurslager__titel {
+  text-align: center;
+  color: #ce001b;
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .img-thumbnail {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.c-veelgestelde-vragen {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.c-accordion__button {
+  background-color: #f8f9fc;
+}
+
+.c-accordion__button:active {
+  color: #ce001b !important;
+}
+
+.c-rood {
+  color: #ce001b;
+}
+
+.c-bold {
+  font-weight: 700;
+}
+
+.c-footer {
+  background-color: #333333;
+}
+
+.c-footer__tekst {
+  color: #fff;
+}
+
+.c-icon {
+  font-size: 2rem;
+  color: #fff;
 }
 
 /*---------------------------------------/*
