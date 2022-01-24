@@ -38,22 +38,6 @@ nav {
   z-index: 10;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: $color-white;
-}
-.accordion-button {
-  &:not(.collapsed) {
-    color: $color-red !important;
-    background-color: $color-lightgrey !important;
-    border: none !important;
-  }
-  &:focus {
-    box-shadow: none;
-  }
-}
-.accordion-body {
-  background-color: $color-lightgrey;
-}
 
 /*---------------------------------------/*
  # ELEMENTS
@@ -90,6 +74,43 @@ p {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+.header {
+  margin-top: -300px;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &:hover {
+    color: $color-red !important;
+  }
+  &.active {
+    text-decoration: underline;
+    color: $color-white !important;
+    text-decoration-color: $color-red;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $color-white;
+}
+.accordion-button {
+  &:not(.collapsed) {
+    color: $color-red !important;
+    background-color: $color-lightgrey !important;
+    border: none !important;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.accordion-body {
+  background-color: $color-lightgrey;
+}
+
+
+
 
 .c-carousel {
   margin-top: -90px;
@@ -130,6 +151,7 @@ p {
     background-color: $color-red;
     border: none;
 
+
     &:hover {
       background-color: $color-darkred;
     }
@@ -139,6 +161,16 @@ p {
     }
   }
 }
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: $color-darkred;
+  border-color: none;
+  box-shadow: none;
+}
+
+
+
 
 .c-vind-ons-hier {
   margin-bottom: 4rem;
@@ -217,6 +249,7 @@ p {
 }
 .c-footer {
   background-color: $color-darkgrey;
+  padding: 1rem 0 1rem 0;
   &__tekst {
     color: $color-white;
   }
