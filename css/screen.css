@@ -50,10 +50,6 @@ nav {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.c-header {
-  padding-bottom: 10rem;
-}
-
 .c-header__button {
   background-color: #ce001b;
   border: none;
@@ -72,7 +68,11 @@ nav {
 }
 
 .c-header__titel {
-  font-size: 5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.c-header__ondertitel {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .c-kwaliteit {
@@ -84,6 +84,10 @@ nav {
   background-color: #f8f9fc;
   margin-bottom: 3rem;
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.c-zo-werken-wij {
   padding-bottom: 4rem;
 }
 
@@ -184,6 +188,10 @@ nav {
   margin-bottom: 4rem;
 }
 
+.c-openingsuren {
+  margin-top: 3rem;
+}
+
 .c-accordion__button {
   background-color: #f8f9fc;
 }
@@ -206,12 +214,17 @@ nav {
   color: #fff;
 }
 
+.c-icon:hover {
+  color: #ce001b;
+}
+
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
 .nav-link {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #000 !important;
 }
 
 .nav-link:hover {
@@ -223,6 +236,15 @@ nav {
   color: #000 !important;
   -webkit-text-decoration-color: #ce001b;
           text-decoration-color: #ce001b;
+}
+
+.navbar-toggler-icon {
+  content: url(../images/toggleicon.png);
+}
+
+.navbar-toggler {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .navbar-light .navbar-nav .nav-link {

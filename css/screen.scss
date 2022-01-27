@@ -75,7 +75,6 @@ nav {
 /*---------------------------------------*/
 
 .c-header {
-  padding-bottom: 10rem;
   &__button {
     background-color: $color-red;
     border: none;
@@ -91,9 +90,10 @@ nav {
     }
   }
   &__titel {
-    font-size: 5rem;
-    
-
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  &__ondertitel {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -106,6 +106,10 @@ nav {
   background-color: $color-lightgrey;
   margin-bottom: 3rem;
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.c-zo-werken-wij {
   padding-bottom: 4rem;
 }
 
@@ -196,6 +200,9 @@ nav {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+.c-openingsuren {
+  margin-top: 3rem;
+}
 
 .c-accordion {
   &__button {
@@ -216,14 +223,18 @@ nav {
 .c-icon {
   font-size: $fontsize-icon;
   color: $color-white;
+  &:hover {
+    color: $color-red;
+  }
 }
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
 
 .nav-link {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: $color-black !important;
 
   &:hover {
     color: $color-red !important;
@@ -233,6 +244,14 @@ nav {
     color: $color-black !important;
     text-decoration-color: $color-red;
   }
+}
+
+.navbar-toggler-icon {
+  content: url(../images/toggleicon.png);
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
