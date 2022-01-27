@@ -39,7 +39,7 @@
     </nav>
 
     <div id="carouselExampleLight" class="carousel carousel-light slide c-carousel" data-bs-ride="carousel">
-      <div class="carousel-indicators">
+      <div class="carousel-indicators c-carousel__indicators">
         <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -64,10 +64,10 @@
           <img src="images/headerslide5.png" class="d-block w-100" alt="slide5" />
         </div>
       </div>
-      <div class="carousel-caption c-header">
+      <div class="carousel-caption c-carousel__caption c-header">
         <h1 style="font-size: 6vw" class="c-header__titel">KEURSLAGER FILIP</h1>
         <h2 style="font-size: 2vw" class="c-header__ondertitel">WELKOM OP ONZE WEBSITE</h2>
-        <a href="#contact" class="btn c-header__button">CONTACTEER ONS</a>
+        <a style="font-size: 1vw" href="#contact" class="btn btn-primary c-header__button">CONTACTEER ONS</a>
       </div>
     </div>
 
@@ -81,7 +81,7 @@
     <div id="overons" class="c-over-ons">
       <div class="container">
         <div class="row">
-          <img src="images/onsteam.jpg" class="col-lg-6 img-fluid" width="960" height="720" alt="onsteam" />
+          <img src="images/onsteam.jpg " class="col-lg-6 img-fluid" width="960" height="720" alt="onsteam" />
 
           <div class="col-lg-6 mt-5 pt-xl-5">
             <h2>OVER <span class="u-highlight">ONS</span></h2>
@@ -93,12 +93,8 @@
 
     <div class="c-zo-werken-wij">
       <h2 class="d-flex justify-content-center">ZO WERKEN&#160;<span class="u-highlight">WIJ</span>!</h2>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-10 offset-1 ">
-            <video id="video" controls poster="images/postervideo.png" class="video img-fluid" src="video keurslager aangepast.mp4"></video>
-          </div>
-        </div>
+      <div class="container">
+        <iframe class="col-12" src="https://www.youtube.com/embed/AcgnOcSvA34" allowfullscreen width="1519" height="768"></iframe>
       </div>
     </div>
 
@@ -215,7 +211,7 @@
     <div class="c-veelgestelde-vragen pt-xl-5">
       <div class="container">
         <h2>VEELGESTELDE <span class="u-highlight"> VRAGEN</span></h2>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-12 col-lg-6 c-vragen">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">

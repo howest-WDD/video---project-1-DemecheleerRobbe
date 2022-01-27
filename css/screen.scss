@@ -79,6 +79,7 @@ nav {
     background-color: $color-red;
     border: none;
     color: $color-white;
+    margin-top: 1.5rem;
 
     &:hover {
       background-color: $color-darkred;
@@ -91,9 +92,20 @@ nav {
   }
   &__titel {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
   }
   &__ondertitel {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+}
+
+.c-carousel {
+  &__caption {
+    padding-bottom: 0.5rem;
+  }
+  &__indicators {
+    margin: 0;
   }
 }
 
@@ -144,13 +156,6 @@ nav {
       background-color: $color-darkred !important;
     }
   }
-}
-
-.btn-primary:focus {
-  color: #fff;
-  background-color: $color-darkred;
-  border-color: none;
-  box-shadow: none;
 }
 
 .c-vind-ons-hier {
@@ -281,6 +286,14 @@ nav {
   border: none;
   background-color: rgba(0, 0, 0, 0);
 }
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: $color-darkred;
+  border-color: none;
+  box-shadow: none;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
