@@ -13,11 +13,6 @@
   font-family: "proxima-nova", sans-serif;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0) !important;
-  z-index: 10;
-}
-
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -44,53 +39,40 @@ p {
   font-family: "proxima-nova", sans-serif;
 }
 
+nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 10;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.header {
-  margin-top: -300px;
+.c-header {
+  padding-bottom: 10rem;
 }
 
-.nav-link {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.nav-link:hover {
-  color: #ce001b !important;
-}
-
-.nav-link.active {
-  text-decoration: underline;
-  color: #fff !important;
-  -webkit-text-decoration-color: #ce001b;
-          text-decoration-color: #ce001b;
-}
-
-.navbar-light .navbar-nav .nav-link {
+.c-header__button {
+  background-color: #ce001b;
+  border: none;
   color: #fff;
 }
 
-.accordion-button:not(.collapsed) {
-  color: #ce001b !important;
-  background-color: #f8f9fc !important;
-  border: none !important;
+.c-header__button:hover {
+  background-color: #a80016;
+  color: #fff;
 }
 
-.accordion-button:focus {
+.c-header__button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: #a80016;
 }
 
-.accordion-body {
-  background-color: #f8f9fc;
-}
-
-.c-carousel {
-  margin-top: -90px;
+.c-header__titel {
+  font-size: 5rem;
 }
 
 .c-kwaliteit {
@@ -179,7 +161,6 @@ p {
 .c-info__effect {
   text-decoration: none;
   color: #000;
-  font-size: 1.25rem;
 }
 
 .c-info__effect:hover {
@@ -198,19 +179,6 @@ p {
   font-weight: 700;
 }
 
-.card {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card .img-thumbnail {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .c-veelgestelde-vragen {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -222,14 +190,6 @@ p {
 
 .c-accordion__button:active {
   color: #ce001b !important;
-}
-
-.c-rood {
-  color: #ce001b;
-}
-
-.c-bold {
-  font-weight: 700;
 }
 
 .c-footer {
@@ -249,6 +209,61 @@ p {
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
+.nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #ce001b !important;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  color: #000 !important;
+  -webkit-text-decoration-color: #ce001b;
+          text-decoration-color: #ce001b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ce001b !important;
+  background-color: #f8f9fc !important;
+  border: none !important;
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f8f9fc;
+}
+
+.card {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .img-thumbnail {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+.u-highlight {
+  color: #ce001b;
+}
+
+.u-bold {
+  font-weight: 700;
+}

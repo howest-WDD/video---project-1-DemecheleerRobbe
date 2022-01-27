@@ -33,12 +33,6 @@ $font-title: "proxima-nova", sans-serif;
   font-family: $font-normal;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0) !important;
-  z-index: 10;
-}
-
-
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -67,6 +61,11 @@ p {
   font-family: $font-title;
 }
 
+nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 10;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -74,46 +73,28 @@ p {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.header {
-  margin-top: -300px;
-}
 
-.nav-link {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.c-header {
+  padding-bottom: 10rem;
+  &__button {
+    background-color: $color-red;
+    border: none;
+    color: $color-white;
 
-  &:hover {
-    color: $color-red !important;
+    &:hover {
+      background-color: $color-darkred;
+      color: $color-white;
+    }
+    &:active {
+      box-shadow: none;
+      background-color: $color-darkred;
+    }
   }
-  &.active {
-    text-decoration: underline;
-    color: $color-white !important;
-    text-decoration-color: $color-red;
+  &__titel {
+    font-size: 5rem;
+    
+
   }
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: $color-white;
-}
-.accordion-button {
-  &:not(.collapsed) {
-    color: $color-red !important;
-    background-color: $color-lightgrey !important;
-    border: none !important;
-  }
-  &:focus {
-    box-shadow: none;
-  }
-}
-.accordion-body {
-  background-color: $color-lightgrey;
-}
-
-
-
-
-.c-carousel {
-  margin-top: -90px;
 }
 
 .c-kwaliteit {
@@ -151,7 +132,6 @@ p {
     background-color: $color-red;
     border: none;
 
-
     &:hover {
       background-color: $color-darkred;
     }
@@ -168,9 +148,6 @@ p {
   border-color: none;
   box-shadow: none;
 }
-
-
-
 
 .c-vind-ons-hier {
   margin-bottom: 4rem;
@@ -195,7 +172,7 @@ p {
   &__effect {
     text-decoration: none;
     color: $color-black;
-    font-size: $fontsize-subtitle;
+
     &:hover {
       color: $color-red;
     }
@@ -215,17 +192,6 @@ p {
   font-weight: 700;
 }
 
-.card {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  align-items: center;
-}
-
-.card .img-thumbnail {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .c-veelgestelde-vragen {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -240,13 +206,6 @@ p {
   }
 }
 
-.c-rood {
-  color: $color-red;
-}
-
-.c-bold {
-  font-weight: 700;
-}
 .c-footer {
   background-color: $color-darkgrey;
   padding: 1rem 0 1rem 0;
@@ -262,6 +221,55 @@ p {
  # BOOTSTRAP
 /*---------------------------------------*/
 
+.nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &:hover {
+    color: $color-red !important;
+  }
+  &.active {
+    text-decoration: underline;
+    color: $color-black !important;
+    text-decoration-color: $color-red;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $color-black;
+}
+.accordion-button {
+  &:not(.collapsed) {
+    color: $color-red !important;
+    background-color: $color-lightgrey !important;
+    border: none !important;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.accordion-body {
+  background-color: $color-lightgrey;
+}
+
+.card {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+}
+
+.card .img-thumbnail {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+
+.u-highlight {
+  color: $color-red;
+}
+
+.u-bold {
+  font-weight: 700;
+}
