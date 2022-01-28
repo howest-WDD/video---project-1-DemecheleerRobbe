@@ -80,6 +80,12 @@ nav {
     border: none;
     color: $color-white;
     margin-top: 1.5rem;
+    @media only screen and(max-width:992px) {
+      margin-top: 1rem;
+    }
+    @media only screen and(max-width:576px) {
+      margin-top: 0.5rem;
+    }
 
     &:hover {
       background-color: $color-darkred;
@@ -103,12 +109,18 @@ nav {
 .c-carousel {
   &__caption {
     padding-bottom: 0.5rem;
+    top: 7rem;
+    @media only screen and(max-width:992px) {
+      top: 3rem;
+    }
+    @media only screen and(max-width:576px) {
+      top: 1rem;
+    }
   }
   &__indicators {
     margin: 0;
   }
 }
-
 .c-kwaliteit {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -123,6 +135,9 @@ nav {
 
 .c-zo-werken-wij {
   padding-bottom: 4rem;
+  &__titel {
+    margin-bottom: 2rem;
+  }
 }
 
 .c-nieuwsbrief {
@@ -192,6 +207,9 @@ nav {
   background-color: $color-lightgrey;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  &__titel {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .c-keurslager__titel {
@@ -204,9 +222,6 @@ nav {
 .c-veelgestelde-vragen {
   margin-top: 4rem;
   margin-bottom: 4rem;
-}
-.c-openingsuren {
-  margin-top: 3rem;
 }
 
 .c-accordion {
